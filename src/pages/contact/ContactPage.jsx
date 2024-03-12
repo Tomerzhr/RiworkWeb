@@ -27,7 +27,7 @@ function Contact() {
         onReset={rest.handleReset}
         onChange={rest.validateForm}
         to={ROUTS.HOME}
-        style={{ width: "70%", padding: "50px 30px 70px 30px" }}>
+        style={{ width: "80%", padding: "50px 30px 70px 30px" }}>
         <Input label="First Name" name="first" data={value.data} handleChange={rest.handleChange} error={value.error.first} sm={6} />
         <Input label="Last Name" name="last" data={value.data} handleChange={rest.handleChange} error={value.error.last} sm={6} />
         <Input label="Email" name="email" data={value.data} handleChange={rest.handleChange} error={value.error.email} />

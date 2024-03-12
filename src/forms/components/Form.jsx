@@ -9,7 +9,7 @@ const Form = ({ onSubmit, onReset, onChange, children, to, title, style }) => {
   const navigate = useNavigate();
   const { isDark } = useTheme();
 
-    //Css Style Section 
+  //Css Style Section
 
   const titleStyle = {
     fontWeight: "600",
@@ -25,7 +25,7 @@ const Form = ({ onSubmit, onReset, onChange, children, to, title, style }) => {
       <Grid container spacing={2}>
         {children}
       </Grid>
-      <Grid container spacing={1}>
+      <Grid container spacing={0.5}>
         <Grid item xs={4} sm={2} md={2} lg={1.5}>
           <GlobalButton node="Submit" disabled={!!onChange()} onClick={onSubmit} />
         </Grid>

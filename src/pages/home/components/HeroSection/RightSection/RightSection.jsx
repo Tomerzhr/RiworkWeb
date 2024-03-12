@@ -1,10 +1,9 @@
 import { styled } from "@mui/material/styles";
-
+import HeroPhoto from "../../../../../../assets/images/MainPhoto.png";
 
 const RightSection = () => {
+  //Css Style Section
 
-  //Css Style Section 
-  
   const Image = styled("img")(({ theme }) => ({
     [theme.breakpoints.down("xs")]: {
       width: "100%",
@@ -18,8 +17,8 @@ const RightSection = () => {
   }));
 
   //End of Css Style Section
-  
-  return <Image src="../../../../../../assets/images/MainPhoto.png" alt="main photo" width="100%" />;
+
+  return <Image src={HeroPhoto} alt="main photo" width="100%" />;
 };
 
 export default RightSection;

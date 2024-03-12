@@ -4,6 +4,7 @@ import RightSection from "./RightSection/RightSection";
 import { useTheme } from "../../../../providers/ThemeProvider";
 import { useNavigate } from "react-router-dom";
 import ROUTS from "../../../../routes/routsModel";
+import HeroBackground from "../../../../../assets/images/hero.jpg";
 
 const HeroSection = () => {
   const { isDark } = useTheme();
@@ -24,7 +25,7 @@ const HeroSection = () => {
       content: '""',
       position: "absolute",
       left: "0",
-      background: "url(../../../../../../../assets/images/hero.jpg)",
+      background: { HeroBackground },
       width: "476px",
       height: "100%",
       backgroundRepeat: "no-repeat",

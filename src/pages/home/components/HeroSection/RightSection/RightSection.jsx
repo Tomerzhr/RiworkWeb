@@ -18,7 +18,7 @@ const RightSection = () => {
 
   //End of Css Style Section
 
-  return <Image src={HeroPhoto} alt="main photo" width="100%" />;
+  return <Image src={HeroPhoto} alt="hero photo" width="100%" />;
 };
 
 export default RightSection;

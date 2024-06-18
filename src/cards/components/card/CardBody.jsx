@@ -43,7 +43,7 @@ const CardBody = ({ info }) => {
   };
 
   return (
-    <Box sx={{ padding: "15px 5px", width: "260px", height: "230px" }}>
+    <Box sx={{ padding: "15px 5px", width: "260px", height: "230px", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
       <h2 style={HeadlineStyle}>{makeFirstLatterUpperCase(title)}</h2>
       <h3 style={SubtitleStyle}>{makeFirstLatterUpperCase(subtitle)}</h3>
       <Divider sx={{ paddingBottom: 2 }} />
